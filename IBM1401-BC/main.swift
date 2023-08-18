@@ -14,7 +14,6 @@ do {
         usage()
     }
 
-    let encoder = Lib1401.BCEncoder.shared
     let filename = "./"+CommandLine.arguments[2]
     let input = try Data(contentsOf: URL(filePath: filename))
 
@@ -22,7 +21,7 @@ do {
         let encoded = try Lib1401.CharacterEncodings.shared.encode(code: String(data: input, encoding: .utf8)!)
         try Data(encoded).write(to: URL(filePath: filename+".dis"))
     } else {
-        if let decoded = try encoder.decode(from: Data(input)), let data = decoded.data(using: .utf8) {
+        if let decoded = try Lib1401.CharacterEncodings.shared.decode(from: Data(input)), let data = decoded.data(using: .utf8) {
             try data.write(to: URL(filePath: filename+".bcd"))
         }
     }

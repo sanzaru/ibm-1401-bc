@@ -19,7 +19,7 @@ do {
     let input = try Data(contentsOf: URL(filePath: filename))
 
     if CommandLine.arguments[1] == "-e" {
-        let encoded = try encoder.encode(with: String(data: input, encoding: .utf8)!)
+        let encoded = try Lib1401.CharacterEncodings.shared.encode(code: String(data: input, encoding: .utf8)!)
         try Data(encoded).write(to: URL(filePath: filename+".dis"))
     } else {
         if let decoded = try encoder.decode(from: Data(input)), let data = decoded.data(using: .utf8) {

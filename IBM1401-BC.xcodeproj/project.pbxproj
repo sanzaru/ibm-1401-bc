@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683D789C2A8F6A2C00F6BCC4 /* Lib1401 in Frameworks */ = {isa = PBXBuildFile; productRef = 683D789B2A8F6A2C00F6BCC4 /* Lib1401 */; };
 		68C661322A86FBF700AA5483 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C661312A86FBF700AA5483 /* main.swift */; };
-		68C6613D2A87088500AA5483 /* Lib1401 in Frameworks */ = {isa = PBXBuildFile; productRef = 68C6613C2A87088500AA5483 /* Lib1401 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68C6613D2A87088500AA5483 /* Lib1401 in Frameworks */,
+				683D789C2A8F6A2C00F6BCC4 /* Lib1401 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 			);
 			name = "IBM1401-BC";
 			packageProductDependencies = (
-				68C6613C2A87088500AA5483 /* Lib1401 */,
+				683D789B2A8F6A2C00F6BCC4 /* Lib1401 */,
 			);
 			productName = "IBM1401-BC";
 			productReference = 68C6612E2A86FBF700AA5483 /* IBM1401-BC */;
@@ -119,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 68C661252A86FBF700AA5483;
+			packageReferences = (
+				683D789A2A8F6A2C00F6BCC4 /* XCRemoteSwiftPackageReference "lib1401" */,
+			);
 			productRefGroup = 68C6612F2A86FBF700AA5483 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,9 +310,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		683D789A2A8F6A2C00F6BCC4 /* XCRemoteSwiftPackageReference "lib1401" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/lib1401";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		68C6613C2A87088500AA5483 /* Lib1401 */ = {
+		683D789B2A8F6A2C00F6BCC4 /* Lib1401 */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 683D789A2A8F6A2C00F6BCC4 /* XCRemoteSwiftPackageReference "lib1401" */;
 			productName = Lib1401;
 		};
 /* End XCSwiftPackageProductDependency section */

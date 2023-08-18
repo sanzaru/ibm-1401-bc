@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		68C6612E2A86FBF700AA5483 /* IBM1401-BC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "IBM1401-BC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C661312A86FBF700AA5483 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		68FF91072A8F9A8700B0B052 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 		68C661252A86FBF700AA5483 = {
 			isa = PBXGroup;
 			children = (
+				68FF91072A8F9A8700B0B052 /* README.md */,
 				68C661302A86FBF700AA5483 /* IBM1401-BC */,
 				68C6612F2A86FBF700AA5483 /* Products */,
 				68C661392A86FC0B00AA5483 /* Frameworks */,
